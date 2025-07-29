@@ -1,0 +1,10 @@
+1.write a program for matrix addition 
+    1 2  1 2 = 2 4 
+    3 4  3 4   6 8
+2.write a program TO print diagonal sum of matrix 
+    1 2 3
+    4 5 6   = 15
+    7 8 9
+3.writw a program to perform multiplication 
+    4 5   4 5     = 46 55 
+    6 7   6 7       66 79
