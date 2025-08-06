@@ -1,0 +1,166 @@
+//1.creating a java class
+class Test{
+
+//member variables
+int appId;
+String appName;
+Test(int appId, String appName){
+this.appId=appId;
+this.appName=appName;
+}
+
+//methods
+void display(){
+System.out.println("Id:" + appId + "Application Name:" + appName);
+}
+
+//2.declare and initialize object 
+ Test t1 = new Test();
+ 
+//constructors in java 
+//default constructor "Test"
+Test(){
+
+}
+public static void main(String[]args){
+System.out.println("This is my default constructor");
+Test t1=new Test();
+
+// parameterized constructor
+public static void main(String []args){
+test t1=new Test(110,"facebook");
+test t1=new Test(2230,"instagram");
+t1.display();
+t2.display();
+}
+}
+}
+
+//types of inheritance 
+//single inheritance
+class A{
+}
+class B extends A{
+}
+
+//multilevel inheritance
+class A{
+}
+class B extends A{
+}
+class C extends B{
+}
+
+//heiachicial inheritance
+class A{
+}
+class B extends A{
+}
+class C extends A{
+}
+
+//multiple inheritance 
+class A{
+}
+class B{
+}
+class C extends A,B
+
+//hybrid inheritance
+class A{
+}
+class B extends A{
+}
+class C extends A{
+}
+class D extends A,B,C{
+}
+
+//polymorshism
+//compile time polymorshism
+class calculator{
+static int add(int a, int b){
+return a+b;
+}
+static double add(double a, double b){
+return a+b;
+}
+public static void main(String args[]){
+System.out.println(calculator.add(123,17));    // method overloading
+System.out.println(calculator.add(18.3,1.9));  //method overriding
+
+}
+}
+
+//runtime polymorshism
+class Mobile{
+void sms()
+{
+System.out.println("Mobile class);
+}
+}
+//extending the mobile class
+public class Oneplus extends Mobile{
+//overriding sms() of mobile class 
+void sms(){
+System.out.println("Oneplus");
+}
+public static void main(String args[]){
+Oneplus smsObj=newOneplus();
+smsObj.sms();
+}
+}
+
+//abstraction 
+public abstract class MyAbstact{         //abstract class contains abstract methods and concrete methods 
+public abstract void abstractMethod();   //unimplementation method called abstract method
+public void display(){
+System.out.println("concrete method");
+}
+}
+
+//interface 
+public interface Bikes{
+public void start();
+class Honds implements Bikes();
+public void start{
+System.out.println("Honda Bike")
+}
+class Apache implements Bikes();
+public void start{
+System.out.println("apache Bike")
+}
+}
+
+class Rider{
+public static void main(String[]args){
+Bike b1=new honda();
+b1.start();
+Bike b2=new Apache();
+b2.start();
+}
+}
+
+//encapsulation(binding data and methods in 1 unit)
+public class Artist{
+private String name;  
+//get method
+public String getName(){
+return name;
+}
+//set method(set not have return tyee)
+public void setName(String name){
+this.name=name;
+}
+}
+
+public class Show{
+public statuc void  main(String args[]){
+//creating instance of the encapsulated class 
+Artist s=new Artist();
+//setting value in the name member
+s.setName("Prabas");
+//getting value of the name member
+System.out.println(s.getName());
+}
+}
